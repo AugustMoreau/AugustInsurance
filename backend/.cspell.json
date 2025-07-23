@@ -1,0 +1,34 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "AUGUSTIUM",
+    "Augustium",
+    "augustium",
+    "pids",
+    "jspm",
+    "eslintcache",
+    "stylelintcache",
+    "Microbundle",
+    "Nuxt",
+    "nuxt",
+    "ehthumbs",
+    "gitmodules",
+    "cpuprofile",
+    "heapprofile",
+    "heapsnapshot",
+    "typedoc",
+    "HSTS",
+    "whsec"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "coverage",
+    "*.log",
+    "*.min.*",
+    "*.snap",
+    ".git",
+    ".env*"
+  ]
+}

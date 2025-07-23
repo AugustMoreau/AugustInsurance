@@ -1,0 +1,5 @@
+# Augustium language files
+*.aug linguist-language=Augustium
+*.aug linguist-detectable=true
+*.aug linguist-vendored=false
+*.aug linguist-generated=false

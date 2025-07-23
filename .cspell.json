@@ -1,0 +1,40 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "prefs",
+    "keccak",
+    "Augustium",
+    "augustc",
+    "augustium",
+    "setex",
+    "hget",
+    "hset",
+    "hgetall",
+    "hdel",
+    "lpush",
+    "rpop",
+    "llen",
+    "sadd",
+    "srem",
+    "smembers",
+    "sismember",
+    "HGET",
+    "HSET",
+    "HGETALL",
+    "HDEL",
+    "LPUSH",
+    "RPOP",
+    "LLEN",
+    "SADD",
+    "SREM",
+    "SMEMBERS",
+    "SISMEMBER"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/vscode-extension/**",
+    "**/.git/**",
+    "**/dist/**"
+  ]
+}

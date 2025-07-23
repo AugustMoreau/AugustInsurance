@@ -1,0 +1,63 @@
+{
+  "name": "august-insurance",
+  "version": "0.8.2",
+  "description": "Modern health insurance claims processing platform leveraging Augustium smart contracts for automated, transparent, and fraud-resistant claim handling",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:contracts && npm run build:backend && npm run build:frontend",
+    "build:contracts": "augustc compile contracts/",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "npm run test:contracts && npm run test:backend && npm run test:frontend",
+    "test:contracts": "augustium test contracts/",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "test:integration": "cd backend && npm run test:integration",
+    "test:coverage": "nyc npm test",
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.ts,.tsx --fix",
+    "deploy:testnet": "augustium deploy --network testnet contracts/",
+    "deploy:mainnet": "augustium deploy --network mainnet contracts/",
+    "verify:contracts": "augustium verify --network mainnet contracts/",
+    "start": "npm run start:backend",
+    "start:backend": "cd backend && npm start",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "setup": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "blockchain",
+    "insurance",
+    "healthcare",
+    "smart-contracts",
+    "augustium",
+    "claims-processing",
+    "fraud-detection"
+  ],
+  "author": "August Moreau <august.moreau@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "concurrently": "^8.2.0",
+    "eslint": "^8.45.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "nyc": "^15.1.0",
+    "typescript": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AugustMoreau/AugustInsurance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AugustMoreau/AugustInsurance/issues"
+  },
+  "homepage": "https://github.com/AugustMoreau/AugustInsurance#readme"
+}

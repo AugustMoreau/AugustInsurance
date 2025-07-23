@@ -1,0 +1,13 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "setex",
+    "hget", "hset", "hgetall", "hdel",
+    "lpush", "rpop", "llen",
+    "sadd", "srem", "smembers", "sismember",
+    "HGET", "HSET", "HGETALL", "HDEL",
+    "LPUSH", "RPOP", "LLEN",
+    "SADD", "SREM", "SMEMBERS", "SISMEMBER"
+  ]
+}
